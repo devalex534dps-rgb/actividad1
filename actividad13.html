@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad</title>
+    <link rel="stylesheet" href="css/actividad13.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Tu puedes Votar?</h2>
+
+        <div class="grupo-input">
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" placeholder="Ej. 25">
+            <div id="mensaje-error" class="error">Ingresa un número válido.</div>
+        </div>
+
+        <button onclick="verificar()">Verificar</button>
+
+        <div class="grupo-input" style="margin-top: 20px;">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly placeholder="Resultado">
+        </div>
+    </div>
+</body>
+<script src="js/actividad13.js"></script>
+</html>
+
+

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ef4000, #ef40006e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background: #f4efed;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px #601900;
+    width: 300px;
+    text-align: center;
+    transition: border-color 0.4s ease;
+}
+
+h2 {
+    color: #ef4000;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 26px;
+    transition: color 0.4s ease;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #ef4000;
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #e9ecef;
+    color: #666;
+    cursor: not-allowed;
+    font-weight: bold;
+    border: 2px solid #ef4000;
+}
+
+button {
+    background-color: #fff;
+    color: #ef4000;
+    font-weight: bold;
+    border: 2px solid #ef4000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+button:before {
+    transition: all 250ms
+}
+
+button:hover {
+    background-color: #ef4000;
+    color: #fff;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}

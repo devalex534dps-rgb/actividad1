@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #5b007e, #b706bd, #dc14e3, #e66bea, #FFC0CB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background: #f2d6fd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px #5b007e;
+    width: 300px;
+    text-align: center;
+    transition: border-color 0.4s ease;
+}
+
+h2 {
+    color: #5b007e;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 26px;
+    transition: color 0.4s ease;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5b007e;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #5b007e;
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #f2d6fd;
+    color: #b706bd;
+    cursor: not-allowed;
+    font-weight: bold;
+    border: 2px solid #b706bd;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#calcular, #siguiente {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+#calcular {
+    background: transparent;
+    border: 2px solid #5b007e;
+    color:#5b007e;
+}
+
+#siguiente {
+    background: transparent;
+    border: 2px solid #fe6a83;
+    color:#fe6a83;
+}
+
+button:before {
+    transition: all 250ms
+}
+
+#calcular:hover {
+    background-color: #5b007e;
+    color: #fff;
+}
+#siguiente:hover {
+    background-color: #fe6a83;
+    color: #fff;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}

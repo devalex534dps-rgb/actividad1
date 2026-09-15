@@ -1,0 +1,82 @@
+:root {
+    --accent-color: #5367c1eb;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4e5561, #d8d8d8ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background: var(--accent-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px #252e56eb;
+    width: 300px;
+    text-align: center;
+    transition: border-color 0.4s ease;
+}
+
+h2 {
+    color: #252e56eb;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 26px;
+    transition: color 0.4s ease;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background-color: #e9ecef;
+    color: #666;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+
+button {
+    background-color: #252e56eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition:step-start
+}
+
+button:hover {
+    border: #c2c3c5eb 2px solid;
+    background-color: #252e568f;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}

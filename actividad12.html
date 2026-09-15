@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="css/actividad12.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Conversor de Divisas</h2>
+
+        <div class="grupo-input">
+            <label for="pesos">Pesos MXN:</label>
+            <input type="text" id="pesos" placeholder="Ej. 50">
+            <div id="mensaje-error" class="error">Ingresa un número válido.</div>
+        </div>
+
+        <button onclick="realizarConversion()">Convertir</button>
+
+        <div class="grupo-input" style="margin-top: 20px;">
+            <label for="dolares">Dolares:</label>
+            <input type="text" id="dolares" readonly placeholder="Resultado">
+        </div>
+    </div>
+</body>
+<script src="js/actividad12.js"></script>
+</html>
+
+

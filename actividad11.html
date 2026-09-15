@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Distancia</title>
+    <link rel="stylesheet" href="css/actividad11.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Conversor de Distancia</h2>
+
+        <div class="grupo-input">
+            <label for="kilometros">Kilometros:</label>
+            <input type="text" id="kilometros" placeholder="Ej. 50">
+            <div id="mensaje-error" class="error">Ingresa un número válido.</div>
+        </div>
+
+        <button onclick="realizarConversion()">Convertir</button>
+
+        <div class="grupo-input" style="margin-top: 20px;">
+            <label for="millas">Millas:</label>
+            <input type="text" id="millas" readonly placeholder="Resultado">
+        </div>
+    </div>
+</body>
+<script src="js/actividad11.js"></script>
+</html>
+
+

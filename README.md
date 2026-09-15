@@ -6,15 +6,20 @@ Esta actividad tiene como objetivo aprender a estructurar contenido básico en H
 Se desarrollo un archivo `index.html` que funciona como un menú principal, el cual contiene enlaces (mediante la etiqueta `<a>`) a cada uno de los ejercicios solicitados.
 
 ## Ejercicios Desarrollados
-1. **Ejercicio 2: Párrafos y Formato Básico.** Uso de etiquetas `<p>`, `<strong>`, `<em>` y `<br>`.
-2. **Ejercicio 3: Enlaces Simples.** Creación de enlaces externos y anclas usando `<a>`, junto con los atributos `target="_blank"` y `target="_self"`.
-3. **Ejercicio 4: Imágenes Básicas.** Inserción de imágenes con `<img>`, usando los atributos `src`, `alt` y `width`.
-4. **Ejercicio 5: Combinando Texto y Enlaces.** Integración de texto, imágenes dentro de párrafos y enlaces absolutos.
-5. **Ejercicio 6: Secciones Semánticas Básicas.** Uso de etiquetas estructurales como `<header>`, `<section>` y `<footer>`.
-6. **Ejercicio 7: Listas ordenadas y no ordenadas.** Uso de listas no ordenadas con `<ul>` y ordenadas con `<ol>`.
-7. **Ejercicio 8: Tablas.** Creacion de tablas con la etiqueta `<table>` y estructura con `<thead>`, `<tbody>`, `<tr>`, `<th>` y `<td>`.
-8. **Ejercicio 9: Formulario de Contacto.** Creacion de un formulario sin funcionalidad, solo para la aplicacion y uso de etiquetas como `<form>`, `<label>`, `<input>` y `<button>`.
-9. **Ejercicio 10: Convertidor de Temperatura** Creacion de un formulario con funcionalidad con `javascript` para convertir grados celsius a fahrenheit, se usan palabras clave como `function`, `const`, asi como condicionales, y funciones para obtener valores y el dom del html.
+1. **Ejercicio 1: Hola Mundo basico.**
+2. **Ejercicio 2: Párrafos y Formato Básico.** Uso de etiquetas `<p>`, `<strong>`, `<em>` y `<br>`.
+3. **Ejercicio 3: Enlaces Simples.** Creación de enlaces externos y anclas usando `<a>`, junto con los atributos `target="_blank"` y `target="_self"`.
+4. **Ejercicio 4: Imágenes Básicas.** Inserción de imágenes con `<img>`, usando los atributos `src`, `alt` y `width`.
+5. **Ejercicio 5: Combinando Texto y Enlaces.** Integración de texto, imágenes dentro de párrafos y enlaces absolutos.
+6. **Ejercicio 6: Secciones Semánticas Básicas.** Uso de etiquetas estructurales como `<header>`, `<section>` y `<footer>`.
+7. **Ejercicio 7: Listas ordenadas y no ordenadas.** Uso de listas no ordenadas con `<ul>` y ordenadas con `<ol>`.
+8. **Ejercicio 8: Tablas.** Creacion de tablas con la etiqueta `<table>` y estructura con `<thead>`, `<tbody>`, `<tr>`, `<th>` y `<td>`.
+9. **Ejercicio 9: Formulario de Contacto.** Creacion de un formulario sin funcionalidad, solo para la aplicacion y uso de etiquetas como `<form>`, `<label>`, `<input>` y `<button>`.
+10. **Ejercicio 10: Convertidor de Temperatura** Creacion de un formulario con funcionalidad con `javascript` para convertir grados celsius a fahrenheit, se usan palabras clave como `function`, `const`, asi como condicionales, y funciones para obtener valores y el dom del html.
+11. **Ejercicio 11: Convertidor de kilometros.** Uso de JavaScript para convertir de kilometros a Millas.
+12. **Ejercicio 12: Convertidor de Divisa.** Logica en JavScript para convertir de pesos mexicanos a dolares.
+13. **Ejercicio 13: Calculador de Edad.** Verificacion para comprobar si puede votas (18+) o no.
+14. **Ejercicio 14: Operaciones con Arreglos.** Calculando el numero maximo y minimo de un arreglo de numeros.
 
 ## Estructura del Proyecto
 * `index.html`: Menú principal de navegación hacia los ejercicios.

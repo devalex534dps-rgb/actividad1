@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones sobre numeros</title>
+    <link rel="stylesheet" href="css/actividad14.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Operaciones sobre números</h2>
+
+        <div class="grupo-input">
+            <label for="numeros">Numeros:</label>
+            <input type="text" id="numeros" placeholder="Ej. 25, 30, 45, ...">
+            <div id="mensaje-error" class="error">Ingresa una entrada válida.</div>
+        </div>
+        <div class="buttons">
+            <button onclick="calcular()" id="calcular">Calcular</button>
+            <button onclick="siguiente()" id="siguiente">Siguiente</button>
+        </div>
+
+        <div class="grupo-input" style="margin-top: 20px;">
+            <input type="text" id="resultado" readonly placeholder="Resultado">
+        </div>
+    </div>
+</body>
+<script src="js/actividad14.js"></script>
+</html>
+
+

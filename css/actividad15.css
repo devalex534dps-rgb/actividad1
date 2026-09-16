@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #092328, #092328b7, #09232858);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.formulario {
+    background: #12544F;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px #092328;
+    width: 450px;
+    text-align: center;
+    transition: border-color 0.4s ease;
+}
+
+h2 {
+    color: #fff;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 26px;
+    transition: color 0.4s ease;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #8BBB92;
+    box-shadow: 0 0 10px #8BBB92, 0 0 20px #8BBB92;
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #b4d2c6;
+    color: #2A835F;
+    cursor: not-allowed;
+    font-weight: bold;
+    border: 2px solid #2A835F;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#agregar, #calcular, #siguiente {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+#agregar {
+    background-color: transparent;
+    border: 2px solid #e6e6e6;
+    color: #e6e6e6;
+}
+
+#calcular {
+    background: transparent;
+    border: 2px solid #8BBB92;
+    color:#8BBB92;
+}
+
+#siguiente{
+    background: transparent;
+    border: 2px solid #2A835F;
+    color:#2A835F;
+}
+
+button:before {
+    transition: all 250ms
+}
+
+#agregar:hover{
+    box-shadow: 0 0 10px #e6e6e6, 0 0 20px #e6e6e6;
+}
+
+#calcular:hover {
+    box-shadow: 0 0 10px #8BBB92, 0 0 20px #8BBB92;
+}
+#siguiente:hover{
+    box-shadow: 0 0 10px #2A835F, 0 0 20px #2A835F;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+.warning{
+    color: yellow;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}

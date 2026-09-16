@@ -25,9 +25,9 @@ function calcular() {
 
     let max = Math.max(...numeros);
     let min = Math.min(...numeros);
-    let promedio = numeros.reduce((a, b) => a + b, 0) / numeros.length;
+    let promedio = numeros.reduce((a, b) => a + b, 0) / numeros.length-1;
 
-    if (resultados.length === 0) resultados.splice(0, resultados.length);
+    if (!resultados.length === 0) resultados.splice(0, resultados.length);
     resultados.push(`Mayor: ${max}`);
     resultados.push(`Menor: ${min}`); 
     resultados.push(`Promedio: ${promedio}`);

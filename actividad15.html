@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/actividad15.css">
+</head>
+<body>
+    <div class="formulario" id="form">
+        <h2>Promedios</h2>
+
+        <div class="grupo-input">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Ej. juan">
+            <div id="name-error" class="error">Ingrese una entrada valida.</div>
+        </div>
+
+        <div class="grupo-input">
+            <label for="score">Calificacion:</label>
+            <input type="text" id="score" placeholder="Ej. 85">
+            <div id="score-error" class="error">Ingrese una entrada valida.</div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="agregar()" id="agregar">Agregar Estudiante</button>
+            <button onclick="calcular()" id="calcular">Calcular</button>
+            <button onclick="siguiente()" id="siguiente">Siguiente</button>
+        </div>
+
+        <div class="grupo-input" style="margin-top: 20px;">
+            <input type="text" id="resultado" readonly placeholder="Resultado">
+        </div>
+        <div id="mensaje-error" class="error"></div>
+        <div id="mensaje-advertencia" class="warning">Elimine los registros con la tecla <code>Esc</code>. <br>
+            Doble click en los inputs para limpiarlos.
+        </div>
+    </div>
+    <script src="js/actividad15.js"></script>
+</body>
+</html>

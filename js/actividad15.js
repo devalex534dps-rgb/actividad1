@@ -31,6 +31,7 @@ function agregar() {
     const errorName = document.getElementById('name-error');
     const inputScore = document.getElementById('score').value;
     const errorScore = document.getElementById('score-error');
+    const emergente = document.getElementById('emergente');
 
     if (inputName.trim() === '' || /\d/.test(inputName)) {
         errorName.style.display = 'block';
@@ -48,8 +49,10 @@ function agregar() {
         }
     );
 
-    inputName.value = " ";
-    inputScore.value = " ";
+    emergente.style.display = 'block';
+    setTimeout(() => {
+        emergente.style.display = 'none';
+    }, 1000);
 }
 
 function calcular() {

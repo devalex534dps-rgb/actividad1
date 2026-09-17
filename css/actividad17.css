@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F2EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.formulario {
+    background: #8B9A6E;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px #EAE2D6;
+    width: 450px;
+    text-align: center;
+}
+
+h2 {
+    color: #F7F2EB;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #F7F2EB;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EAE2D6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #F7F2EB;
+    box-shadow: 0 0 10px #F7F2EB, 0 0 20px #F7F2EB;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#agregar {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #F7F2EB;
+    color: #F7F2EB;
+    transition: all 250ms;
+}
+
+#agregar:hover {
+    box-shadow: 0 0 10px #F7F2EB, 0 0 20px #F7F2EB;
+}
+
+.lista-tareas {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tarea {
+    background-color: #EAE2D6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarea span {
+    color: #333;
+    font-weight: bold;
+}
+
+.tarea button {
+    background: transparent;
+    border: 2px solid #8B9A6E;
+    color: #8B9A6E;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.tarea button:hover {
+    box-shadow: 0 0 10px #8B9A6E, 0 0 20px #8B9A6E;
+}

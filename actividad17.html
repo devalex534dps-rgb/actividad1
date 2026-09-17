@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestion de Tareas</title>
     <link rel="stylesheet" href="css/actividad17.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-    
+    <div class="formulario">
+        <h2>Gestión de Tareas</h2>
+
+        <div class="grupo-input">
+            <label for="tarea">Nueva tarea</label>
+            <input type="text" id="tarea" placeholder="Escribe tu tarea">
+        </div>
+
+        <div class="buttons">
+            <button id="agregar">Agregar Tarea</button>
+        </div>
+
+        <div class="lista-tareas" id="listaTareas"></div>
+    </div>
     <script src="js/actividad17.js"></script>
 </body>
+
 </html>

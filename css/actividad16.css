@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #092328, #092328b7, #09232858);
+    background: linear-gradient(to bottom, #1E201E, #3C3D37, #697565);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,33 +8,20 @@ body {
     margin: 0;
 }
 
-.emergente{
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: blue;
-    color: #fff;
-    font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-family: sans-serif;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    display: none;
-}
-
 .formulario {
-    background: #12544F;
+    background: #3C3D37;
+    /* gris oscuro */
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 10px 10px 10px #092328;
+    box-shadow: 10px 10px 10px #1E201E;
     width: 450px;
     text-align: center;
     transition: border-color 0.4s ease;
 }
 
 h2 {
-    color: #fff;
+    color: #ECDFCC;
+    /* beige claro */
     margin-top: 0;
     font-weight: bold;
     font-size: 26px;
@@ -50,29 +37,31 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #fff;
+    color: #ECDFCC;
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #697565;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #1E201E;
+    color: #ECDFCC;
 }
 
 input[type="text"]:focus {
-    border: 2px solid #8BBB92;
-    box-shadow: 0 0 10px #8BBB92, 0 0 20px #8BBB92;
+    border: 2px solid #ECDFCC;
+    box-shadow: 0 0 10px #ECDFCC, 0 0 20px #ECDFCC;
     outline: none;
 }
 
 input[readonly] {
-    background-color: #b4d2c6;
-    color: #2A835F;
+    background-color: #697565;
+    color: #1E201E;
     cursor: not-allowed;
     font-weight: bold;
-    border: 2px solid #2A835F;
+    border: 2px solid #ECDFCC;
     text-align: center;
 }
 
@@ -82,7 +71,10 @@ input[readonly] {
     gap: 10px;
 }
 
-#agregar, #calcular, #siguiente {
+#sumar,
+#restar,
+#multiplicar,
+#dividir {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
@@ -91,49 +83,57 @@ input[readonly] {
     font-size: 16px;
     transition: all 250ms;
     overflow: hidden;
-}
-
-#agregar {
     background-color: transparent;
-    border: 2px solid #e6e6e6;
-    color: #e6e6e6;
 }
 
-#calcular {
-    background: transparent;
-    border: 2px solid #8BBB92;
-    color:#8BBB92;
+#sumar {
+    border: 2px solid #ECDFCC;
+    color: #ECDFCC;
 }
 
-#siguiente{
-    background: transparent;
-    border: 2px solid #2A835F;
-    color:#2A835F;
+#restar {
+    border: 2px solid #697565;
+    color: #697565;
+}
+
+#multiplicar {
+    border: 2px solid #5d5f56;
+    color: #5d5f56;
+}
+
+#dividir {
+    border: 2px solid #1E201E;
+    color: #1E201E;
 }
 
 button:before {
-    transition: all 250ms
+    transition: all 250ms;
 }
 
-#agregar:hover{
-    box-shadow: 0 0 10px #e6e6e6, 0 0 20px #e6e6e6;
+#sumar:hover {
+    box-shadow: 0 0 10px #ECDFCC, 0 0 20px #ECDFCC;
 }
 
-#calcular:hover {
-    box-shadow: 0 0 10px #8BBB92, 0 0 20px #8BBB92;
+#restar:hover {
+    box-shadow: 0 0 10px #697565, 0 0 20px #697565;
 }
-#siguiente:hover{
-    box-shadow: 0 0 10px #2A835F, 0 0 20px #2A835F;
+
+#multiplicar:hover {
+    box-shadow: 0 0 10px #5d5f56, 0 0 20px #5d5f56;
+}
+
+#dividir:hover {
+    box-shadow: 0 0 10px #1E201E, 0 0 20px #1E201E;
 }
 
 .error {
-    color: red;
+    color: #ECDFCC;
     font-size: 12px;
     display: none;
     margin-top: 5px;
 }
 
-.warning{
+.warning {
     color: yellow;
     font-size: 12px;
     display: block;

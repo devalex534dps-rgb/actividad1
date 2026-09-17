@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(to bottom, #360185, #8F0177, #DE1A58, #F4B342);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #fff;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.btn-eliminar {
+    background-color: transparent;
+    border: 2px solid #DE1A58;
+    color: #DE1A58;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #DE1A58;
+    color: #fff;
+}

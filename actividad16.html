@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="css/actividad16.css">
 </head>
+
 <body>
-    
+    <div class="formulario">
+        <h2>Calculadora</h2>
+
+        <div class="grupo-input">
+            <label for="numero1">Número 1</label>
+            <input type="text" id="numero1" placeholder="Ingresa el primer número">
+        </div>
+
+        <div class="grupo-input">
+            <label for="numero2">Número 2</label>
+            <input type="text" id="numero2" placeholder="Ingresa el segundo número">
+        </div>
+
+        <div class="buttons">
+            <button id="sumar" onclick="calcularOperacion(`suma`)">+</button>
+            <button id="restar" onclick="calcularOperacion(`resta`)">−</button>
+            <button id="multiplicar" onclick="calcularOperacion(`multiplica`)">×</button>
+            <button id="dividir" onclick="calcularOperacion(`division`)">÷</button>
+        </div>
+
+        <div class="grupo-input">
+            <label for="resultado">Resultado</label>
+            <input type="text" id="resultado" readonly placeholder="Resultado">
+        </div>
+
+        <p class="error" id="errorMsg">Error: Ingresa valores válidos</p>
+        <p class="warning" id="warningMsg">Advertencia: División por cero</p>
+    </div>
     <script src="js/actividad16.js"></script>
 </body>
+
 </html>
